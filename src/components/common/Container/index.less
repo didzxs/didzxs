@@ -1,0 +1,34 @@
+@import '~antd/lib/style/themes/default.less';
+@import "../../../less/variables";
+
+.container {
+  // 表格容器
+  border-radius: @border-radius-base;
+  box-shadow: @box-shadow-base;
+  background-color: @white;
+  width: 100%;
+
+  .header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  // container组件按钮分割线
+  .functionItem {
+    cursor: pointer;
+    color: #000;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .exportLine {
+    height: 1px;
+    display: block;
+    width: 106%;
+    background: rgba(196, 196, 196, 1);
+    position: relative;
+    top: -7px;
+    border-right: 1px solid rgba(196, 196, 196, 1);
+  }
+}

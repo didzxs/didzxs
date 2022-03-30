@@ -1,0 +1,62 @@
+@import '../../../less/variables.less';
+
+.placeholder {
+  width: 100%;
+  height: 50px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 0 15px;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+
+  .left {
+    img {
+      height: 30px;
+    }
+  }
+
+  :global {
+    .foo-menu {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      .am-sub-menu-item-selected {
+        .am-list-content {
+          color: @active-color !important;
+        }
+      }
+      .am-sub-menu {
+        .am-radio-checked {
+          .am-radio-inner {
+            &::after {
+              border-color: @active-color;
+            }
+          }
+        }
+      }
+    }
+    
+    .menu-mask {
+      content: ' ';
+      position: fixed;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      opacity: 0.4;
+      z-index: 999;
+    }
+  }
+}

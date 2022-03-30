@@ -1,0 +1,57 @@
+.sidebar-box{
+  width: 72px;
+  height: auto;
+  font-size: 24px;
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  z-index: 9;
+  transform: translate(0, -50%);
+
+  .tool{
+    color: rgba(29, 32, 35, .65);
+
+    .tool-child{
+      width: 72px;
+      height: 72px;
+      border: 1px solid #ddd;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background-color: #fff;
+      position: relative;
+      margin-top: 10px;
+
+      &:hover{
+        color: #fff;
+        border: 1px solid #fc010a;
+        background-color: rgb(200, 20, 20);
+      }
+    }
+
+    .tool-child:first-child {
+      margin-top: 0px;
+    }
+
+    .tool-icon{
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+      vertical-align: 0;
+      position: absolute;
+      top: 30%;
+      right: 50%;
+      transform: translate(50%, -30%);
+    }
+
+    .tool-name{
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      position: absolute;
+      top: 65%;
+      right: 0;
+      transform: translate(0, -35%);
+    }
+  }
+}

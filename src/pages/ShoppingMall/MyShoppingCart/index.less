@@ -1,0 +1,230 @@
+.container {
+  min-width: 1200px;
+  background: #fff;
+  overflow: hidden;
+
+  .header {
+    margin: 0 auto;
+    display: flex;
+    width: 1200px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      cursor: pointer;
+      img {
+        width: 300px;
+      }
+    }
+    .right {
+      width: 600px;
+    }
+  }
+  .product-list-box {
+    margin: 0 auto;
+    width: 1200px;
+    .product-info {
+      display: flex;
+      justify-content: center;
+      img {
+        margin: 0 15px;
+        width: 80px;
+        height: 80px;
+        border: 1px solid rgba(96, 106, 115, .09);
+      }
+      .name {
+        width: 200px;
+        text-align: left;
+      }
+    }
+    :global {
+      .ant-table-wrapper {
+        .ant-table {
+          .ant-table-header {
+            th {
+              background: #edeff0;
+            }
+          }
+          .ant-table-body {
+            td {
+              background: rgba(252, 1, 10, 0.04);
+            }
+          }
+
+          .ant-checkbox-checked {
+            .ant-checkbox-inner {
+              background: #FC010A;
+              border: #FC010A;
+            }
+          }
+        }
+        .ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td {
+          border-right: none;
+        }
+      }
+      .ant-input {
+        width: 80px;
+      }
+    }
+  }
+  .selected-product-box {
+    display: flex;
+    margin: 30px auto;
+    width: 1200px;
+    height: 50px;
+    border: 1px solid rgba(96, 106, 115, .15);
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      padding: 0 29px;
+      :global {
+        .ant-checkbox-checked {
+          .ant-checkbox-inner {
+            background: #FC010A;
+            border: #FC010A;
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+
+      .text2 {
+        padding: 0 20px;
+      }
+      .settle-accounts-btn {
+        width: 145px;
+        height: 50px;
+        color: #fff;
+        background: #FC010A;
+        border: none;
+      }
+    }
+  }
+
+  .confirm-order {
+    margin: 0 auto;
+    width: 1200px;
+    .address-btn {
+      text-align: right;
+      span {
+        cursor: pointer;
+      }
+    }
+    .address {
+      margin: 10px 0 30px;
+      padding: 10px 20px;
+      width: 100%;
+      border: 2px solid #FC010A;
+
+      span {
+        padding-right: 5px;
+      }
+    }
+
+    .address-hint {
+      color: rgba(96, 106, 115, 0.75);
+    }
+    .form-box {
+      margin: 30px 0;
+      overflow: hidden;
+    }
+    .submit-order-box {
+      display: flex;
+      margin-bottom: 45px;
+      width: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: row;
+
+      .submit-order-btn {
+        margin-left: 20px;
+        width: 145px;
+        height: 50px;
+        color: #fff;
+        background: #FC010A;
+        border: none;
+      }
+    }
+  }
+
+  .submit-order-box {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content {
+      .title {
+        padding: 30px 0 10px;
+        font-size: 16px;
+      }
+      .hint {
+        margin: 50px 0;
+        color:rgba(96, 106, 115, .75);
+        text-align: center;
+      }
+    }
+    .account-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .info {
+        display: flex;
+
+        .label {
+          padding: 10px 0;
+          width: 200px;
+          font-size: 16px;
+          border: 1px solid rgba(96, 106, 115, .25);
+          text-align: center;
+        }
+        .data {
+          padding: 10px 0 10px 15px;
+          width: 400px;
+          font-size: 16px;
+          border: 1px solid rgba(96, 106, 115, .25);
+          border-left: none;
+        }
+        &:not(:first-child) {
+          .label, .data {
+            border-top: none;
+          }
+        }
+      }
+    }
+    .qrcode-box {
+      margin: 30px 0;
+      display: flex;
+      width: 600px;
+      justify-content: space-between;
+
+      img {
+        width: 280px;
+        height: 280px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    min-width: 1000px;
+
+    .header {
+      width: 1000px;
+    }
+    .product-list-box {
+      width: 1000px;
+    }
+    .selected-product-box {
+      width: 1000px;
+    }
+
+    .confirm-order {
+      width: 1000px;
+    }
+  }
+}

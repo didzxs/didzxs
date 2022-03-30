@@ -1,0 +1,27 @@
+@import '~antd/lib/style/themes/default.less';
+
+:global {
+  .ant-layout-sider-collapsed {
+    .wp-nav-font {
+      max-width: 0;
+      display: inline-block;
+      opacity: 0;
+    }
+  }
+  .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+    border-right: none;
+  }
+  .ant-menu-item .sider-menu-item-img + span,
+  .ant-menu-submenu-title .sider-menu-item-img + span {
+    transition: opacity 0.3s @ease-in-out, width 0.3s @ease-in-out;
+    opacity: 1;
+  }
+}
+
+.nav {
+  user-select: none;
+}
+.navItem{
+  margin-right: 8px;
+}
+

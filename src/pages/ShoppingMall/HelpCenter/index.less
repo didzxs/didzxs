@@ -1,0 +1,105 @@
+@import '../../../less/variables.less';
+
+.container {
+  width: 100%;
+
+  .flex-box {
+    display: flex;
+
+    & .flex-center{
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .leftMenu {
+    width: 176px;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 65px;
+
+    .menuChild {
+      padding: 20px 0 28px;
+      border-top: 1px solid rgba(96, 106, 115, .09);
+
+      .header {
+        height: 25px;
+        font-size: 16px;
+        color: #1d2023;
+        font-weight: 600;
+        padding-left: 24px;
+      }
+      .child {
+        .flex-box;
+        .flex-center;
+        font-size: 14px;
+        min-height: 36px;
+        text-align: center;
+        color: #3e444a;
+
+        &:hover {
+          color: #C81414;
+          border-left: 3px #C81414 solid;
+          background-color: rgba(200, 20, 20, 0.1);
+        }
+      }
+
+      // 选项被选中时，突出状态
+      .childActive {
+        color: #C81414 !important;
+        // font-weight: 600 !important;
+        border-left: 3px #C81414 solid !important;
+        background-color: rgba(200, 20, 20, 0.32) !important;
+      }
+    }
+  }
+
+  .right {
+    width: 100%;
+    border-top: 1px solid rgba(96, 106, 115, .09);
+    background: #fff;
+    margin-left: 20px;
+
+    .header {
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      color: #1d2023;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(96,106,115,.15);
+      padding-left: 24px;
+    }
+
+    .content{
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      p {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+:global {
+  .ant-empty {
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .box {
+    width: 1000px;
+  }
+}

@@ -1,0 +1,85 @@
+@import '~antd/lib/style/themes/default.less';
+
+.commonModal {
+  :global {
+    .ant-modal-content {
+      //width: 640px;
+      padding: 2px 2px 0;
+      border-radius: 6px;
+      .ant-modal-close {
+        background-color: #fff;
+        height: 16px;
+        width: 16px;
+        border-radius: 8px;
+        right: 16px;
+        top: 12px;
+        .ant-modal-close-x {
+          height: 16px;
+          width: 16px;
+          color: #000;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+    .ant-modal-body {
+      padding: 6px;
+      max-height: 75vh;
+      overflow-y: auto;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .ant-modal-header {
+      background-color: @primary-4;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      border-radius: 6px 6px 0 0;
+      .ant-modal-title {
+        color: #FEFEFE;
+        font-weight: normal;
+      }
+    }
+    .ant-modal-footer {
+      border-top: none;
+    }
+
+    .wp-table {
+      .ant-table-fixed-right {
+        z-index: 999;
+      }
+    }
+  }
+  .saveBtn, .submitBtn {
+    background: @primary-color;
+    border-color: @primary-color;
+    box-shadow: @box-shadow-base;
+    height: 32px;
+    width: 136px;
+    border-radius: 14px;
+    color: rgba(255, 255, 255, 1) !important;
+  }
+
+  .saveBtn:hover, .saveBtn:focus, .submitBtn:hover, .submitBtn:focus {
+    border-color: white;
+    background: @primary-color;
+  }
+
+  .cancelBtn {
+    background-color: #c0c0c0 !important;
+    height: 32px;
+    width: 136px;
+    margin-left: 20px;
+    border-radius: 14px;
+    color: rgba(255, 255, 255, 1) !important;
+  }
+
+  .cancelBtn:hover, .cancelBtn:focus {
+    border-color: white;
+  }
+
+  .showCenter {
+    text-align: center;
+    padding: 0 0 10px;
+  }
+}

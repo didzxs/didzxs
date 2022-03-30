@@ -1,0 +1,22 @@
+.container {
+  .title {
+    position: relative;
+    padding-bottom: 12px;
+    margin: 30px 0;
+    font-size: 22px;
+    font-weight: 550;
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      display: block;
+      width: 30px;
+      height: 3px;
+      background: #e40112;
+      transform: translate(-50%);
+    }
+  }
+}
